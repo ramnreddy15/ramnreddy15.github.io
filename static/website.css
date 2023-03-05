@@ -1,0 +1,59 @@
+body {
+  background-color: #001524;
+  /* margin: auto;  */
+  /* display: flex;   */
+  font-family: monospace
+}
+
+.blockContent {
+  margin-top: 5em;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 1.2em;
+  display: inline-block;
+}
+
+.img {
+  width: 25%;
+  height: 25%;
+  float: left;
+  padding-right: 2%;
+}
+
+.command {
+  color: #FFECD1
+}
+
+h1 {
+  font-size: 4em;
+  color: #e76f51;
+}
+
+h2 {
+  font-size: 3em;
+  color: #FFECD1;
+}
+
+a {
+  color: #FFECD1;
+}
+
+a:active {
+  color: #78290F;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 
+
+  https://coolors.co/palette/001524-15616d-ffecd1-ff7d00-78290f
+  
+  */
