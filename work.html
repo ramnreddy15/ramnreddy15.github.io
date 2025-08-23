@@ -29,7 +29,7 @@
                 </div>
                 <div class="tile-content">
                     <p>A personal storage solution for home use</p>
-                    <div class="tech-stack">[Tech Stack]</div>
+                    <div class="tech-stack">OpenMediaVault, Raspberry Pi, Docker, Tailscale, PhotoPrism</div>
                 </div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
@@ -38,12 +38,12 @@
 
             <div class="project-tile" onclick="showProjectDetails('healthy-chimp')">
                 <div class="tile-header">
-                    <h3>Healthy Chimp</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <h3>HealthyChimp</h3>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Health and wellness application</p>
-                    <div class="tech-stack">[Tech Stack]</div>
+                    <p>Health and wellness workout helper</p>
+                    <div class="tech-stack">Python, OpenCV, Arduino, Ultralytics, Flask, Sockets, Threading</div>
                 </div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
@@ -52,7 +52,21 @@
 
             <div class="project-tile" onclick="showProjectDetails('crisisvision')">
                 <div class="tile-header">
-                    <h3>Crisisvision</h3>
+                    <h3>CrisisVision</h3>
+                    <span class="status completed">COMPLETED</span>
+                </div>
+                <div class="tile-content">
+                    <p>Autonomous Vehicle for Real-Time Hazard Mapping and Survivor Detection in Dangerous Environments</p>
+                    <div class="tech-stack">Numpy, Threading, Sockets, OpenCV, Ultralytics, Raspberry Pi</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('crisisvision')">
+                <div class="tile-header">
+                    <h3>LifeCycle</h3>
                     <span class="status maintenance">UNDER MAINTENANCE</span>
                 </div>
                 <div class="tile-content">
@@ -365,6 +379,19 @@
 
             <div class="project-tile" onclick="showProjectDetails('ai-class')">
                 <div class="tile-header">
+                    <h3>Machine Learning Class</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>AI algorithms, machine learning, and intelligent systems</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ai-class')">
+                <div class="tile-header">
                     <h3>Artificial Intelligence Class</h3>
                     <span class="status maintenance">UNDER MAINTENANCE</span>
                 </div>
@@ -499,28 +526,27 @@
             'home-storage': {
                 title: 'Home Storage Server',
                 description: 'A personal storage solution for home use with advanced file management capabilities.',
-                technologies: ['Python', 'Django', 'PostgreSQL', 'Docker'],
+                technologies: ['OpenMediaVault', 'Raspberry Pi', 'Docker', 'Tailscale', 'PhotoPrism'],
                 images: ["static/me.jpg", "static/me.jpg"],
                 demo: '#',
                 status: 'COMPLETED'
             },
             'healthy-chimp': {
-                title: 'Healthy Chimp',
-                description: 'Health and wellness application for tracking fitness goals and nutrition.',
-                technologies: ['React Native', 'Node.js', 'MongoDB', 'Express'],
-                images: ['static/me.jpg'],
-                demo: '#',
-                source: '#',
-                status: 'UNDER MAINTENANCE'
+                title: 'HealthyChimp',
+                description: 'Competed in the Pulse Overdrive Hackathon and won 4x Meta Quest Headsets. We built HealthyChimp, a fully end-to-end interactive system for reaching your personal fitness goals. It has custom smart glove with interactive LED feedback. Real-time computer vision for exercise form analysis. Model could inference within 10ms. Also built a full-stack app with live video streaming and audio feedback. We had end-to-end IoT integration for seamless user experience with the glove, audio, web and model inference.',
+                technologies: ['Python', 'OpenCV', 'Arduino', 'Ultralytics', 'Flask', 'Sockets', 'Threading'],
+                images: ['static/healthychimp.png', 'static/wining.jpg'],
+                demo: 'https://youtu.be/OUfi9nzZ-9I',
+                status: 'COMPLETED'
             },
             'crisisvision': {
-                title: 'Crisisvision',
-                description: 'Crisis management and visualization tool for emergency response coordination.',
-                technologies: ['Python', 'Flask', 'D3.js', 'PostgreSQL'],
-                images: ['static/r.png'],
-                demo: '#',
-                source: '#',
-                status: 'UNDER MAINTENANCE'
+                title: 'CrisisVision',
+                description: 'There are some situations such as natural disasters and war zones where it is critical for people to gather information about the surroundings. However, these environments can pose a risk to the safety of those involved. crisisvision is an autonomous surveillance vehicle designed to map out dangerous surroundings and detect various entities such as abandoned humans all while relaying the information so the client can make decisions from a safe distance.',
+                technologies: ['Numpy', 'Threading', 'Sockets', 'OpenCV', 'Ultralytics', 'Raspberry Pi'],
+                images: ['static/crisisvision.jpg'],
+                demo: 'https://www.youtube.com/watch?v=H-ocT0HjJQU',
+                source: 'https://github.com/ramnreddy15/CrisisVision',
+                status: 'Completed'
             },
             'cloud-computing': {
                 title: 'Cloud Computing Website',
