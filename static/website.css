@@ -290,20 +290,42 @@ a:active {
 }
 
 .modal-content {
-  background: linear-gradient(135deg, #001524, #15616d);
+  background: #001524;
   margin: 5% auto;
   padding: 2em;
   border: 2px solid #e76f51;
   border-radius: 15px;
   width: 80%;
   max-width: 600px;
+  max-height: 80vh;
   position: relative;
   color: #FFECD1;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar styling */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(21, 97, 109, 0.3);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #e76f51, #ff7d00);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ff7d00, #e76f51);
 }
 
 .close {
-  color: #e76f51;
+  color: #78290F;
   float: right;
   font-size: 2em;
   font-weight: bold;
@@ -320,7 +342,7 @@ a:active {
   color: #FFECD1;
   font-size: 2em;
   margin: 0 0 1em 0;
-  border-bottom: 2px solid #e76f51;
+  border-bottom: 2px solid #78290F;
   padding-bottom: 0.5em;
 }
 
@@ -330,6 +352,28 @@ a:active {
   font-size: 1.1em;
 }
 
+.modal-content img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1em 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal-images {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.modal-images img {
+  display: block;
+  margin: 1em auto;
+  max-height: 300px;
+  object-fit: contain;
+  border: 2px solid rgba(231, 111, 81, 0.3);
+}
+
 .modal-content .status {
   display: inline-block;
   margin-left: 0.5em;
@@ -337,6 +381,7 @@ a:active {
 
 .modal-links {
   margin-top: 2em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -390,8 +435,9 @@ a:active {
 
   .modal-content {
     width: 95%;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 1.5em;
+    max-height: 90vh;
   }
 
   .tile-header {

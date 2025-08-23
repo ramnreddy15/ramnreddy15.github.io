@@ -500,14 +500,15 @@
                 title: 'Home Storage Server',
                 description: 'A personal storage solution for home use with advanced file management capabilities.',
                 technologies: ['Python', 'Django', 'PostgreSQL', 'Docker'],
+                images: ["static/me.jpg", "static/me.jpg"],
                 demo: '#',
-                source: '#',
                 status: 'COMPLETED'
             },
             'healthy-chimp': {
                 title: 'Healthy Chimp',
                 description: 'Health and wellness application for tracking fitness goals and nutrition.',
                 technologies: ['React Native', 'Node.js', 'MongoDB', 'Express'],
+                images: ['static/me.jpg'],
                 demo: '#',
                 source: '#',
                 status: 'UNDER MAINTENANCE'
@@ -516,6 +517,7 @@
                 title: 'Crisisvision',
                 description: 'Crisis management and visualization tool for emergency response coordination.',
                 technologies: ['Python', 'Flask', 'D3.js', 'PostgreSQL'],
+                images: ['static/r.png'],
                 demo: '#',
                 source: '#',
                 status: 'UNDER MAINTENANCE'
@@ -602,14 +604,28 @@
         function showProjectDetails(projectId) {
             const project = projectDetails[projectId];
             if (project) {
+                let links = `<a href="${project.demo}" target="_blank" class="demo-link">View Demo</a>`;
+                if (project.source) {
+                    links += `<a href="${project.source}" target="_blank" class="source-link">Source Code</a>`;
+                }
+
+                let images = ''
+                if (project.images && project.images.length > 0) {
+                    images = '<div class="modal-images">';
+                    project.images.forEach(element => {
+                        images += `<img src="${element}" alt="${project.title}">`;
+                    });
+                    images += '</div>';
+                }
+
                 modalContent.innerHTML = `
                     <h2>${project.title}</h2>
                     <p><strong>Status:</strong> <span class="status ${project.status.toLowerCase().replace(' ', '-')}">${project.status}</span></p>
                     <p><strong>Description:</strong> ${project.description}</p>
                     <p><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>
+                    ${images}
                     <div class="modal-links">
-                        <a href="${project.demo}" target="_blank" class="demo-link">View Demo</a>
-                        <a href="${project.source}" target="_blank" class="source-link">Source Code</a>
+                        ${links}                    
                     </div>
                 `;
                 modal.style.display = 'block';
