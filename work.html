@@ -10,116 +10,622 @@
     <div>
         <h1>><span class="command"> Ram Reddy -projects</span></h1>
 
-        <pre style="color: #e76f51;">> UNDER MAINTENANCE
+        <!-- <pre style="color: #e76f51;">> UNDER MAINTENANCE
             O
             /~~~|#|]|=\|---\__
           |-=_____________  |\\ ,             O       O
          I|_/,-.-.-.-.-,-.\_|='(             T/\     /\=,---.
             ( o )( o )( o )     \            U /\   /\   `O'    cww
              `-'-'-'-'-`-'
-        </pre>
+        </pre> -->
 
-
-        <!-- <h2 style="color: #e76f51;">> Personal Projects</h2>
+        <h2 style="color: #e76f51;">> Personal Projects</h2>
         
-        <div class="project-section">
-            <h3 style="color: #FFECD1;">> [Project Name]</h3>
-            <p style="color: #FFECD1; font-size: 1.2em; margin-left: 2em;">
-                A brief description of your first project. What technologies did you use? 
-                What problems did you solve? What did you learn?
-            </p>
-            <p style="color: #e76f51; margin-left: 2em;">
-                > Technologies: [Tech Stack] | 
-                > <a href="#" target="_blank">View Demo</a> | 
-                > <a href="#" target="_blank">Source Code</a>
-            </p>
-        </div>
+        <div class="projects-grid">
+            <div class="project-tile" onclick="showProjectDetails('home-storage')">
+                <div class="tile-header">
+                    <h3>Home Storage Server</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>A personal storage solution for home use</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
 
-        <div class="project-section">
-            <h3 style="color: #FFECD1;">> [Project Name]</h3>
-            <p style="color: #15616d; font-size: 1.2em; margin-left: 2em;">
-                Description of your second project. Focus on the impact and outcomes.
-            </p>
-            <p style="color: #e76f51; margin-left: 2em;">
-                > Technologies: [Tech Stack] | 
-                > <a href="#" target="_blank">View Demo</a> | 
-                > <a href="#" target="_blank">Source Code</a>
-            </p>
-        </div>
+            <div class="project-tile" onclick="showProjectDetails('healthy-chimp')">
+                <div class="tile-header">
+                    <h3>Healthy Chimp</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Health and wellness application</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
 
-        <div class="project-section">
-            <h3 style="color: #FFECD1;">> [Project Name]</h3>
-            <p style="color: #15616d; font-size: 1.2em; margin-left: 2em;">
-                Description of your third project. Highlight any awards, recognition, or notable achievements.
-            </p>
-            <p style="color: #e76f51; margin-left: 2em;">
-                > Technologies: [Tech Stack] | 
-                > <a href="#" target="_blank">View Demo</a> | 
-                > <a href="#" target="_blank">Source Code</a>
-            </p>
+            <div class="project-tile" onclick="showProjectDetails('crisisvision')">
+                <div class="tile-header">
+                    <h3>Crisisvision</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Crisis management and visualization tool</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('cloud-computing')">
+                <div class="tile-header">
+                    <h3>Cloud Computing Website</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Cloud computing services platform</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+            
+            <div class="project-tile" onclick="showProjectDetails('django-ecommerce')">
+                <div class="tile-header">
+                    <h3>Django Ecommerce Platform</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Full-featured ecommerce solution</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ml-projects')">
+                <div class="tile-header">
+                    <h3>Various ML Projects</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Collection of machine learning projects</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('asteroids')">
+                <div class="tile-header">
+                    <h3>Asteroids</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Classic asteroids game implementation</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('drowsiness-detection')">
+                <div class="tile-header">
+                    <h3>Drowsiness Detection App</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Computer vision-based safety application</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('smartdisposal')">
+                <div class="tile-header">
+                    <h3>SmartDisposal</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Smart waste management system</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('foodsaver')">
+                <div class="tile-header">
+                    <h3>FoodSaver</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Food waste reduction application</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('covid19-app')">
+                <div class="tile-header">
+                    <h3>COVID-19 App</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>COVID-19 tracking and information app</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('cashoutcookie')">
+                <div class="tile-header">
+                    <h3>CashOutCookie</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Financial management application</p>
+                    <div class="tech-stack">[Tech Stack]</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
         </div>
 
         <h2 style="color: #e76f51;">> Course Projects</h2>
         
-        <div class="project-section">
-            <h3 style="color: #FFECD1;">> CS 374: Algorithms & Models of Computation</h3>
-            <p style="color: #15616d; font-size: 1.2em; margin-left: 2em;">
-                Implemented advanced algorithms including dynamic programming, graph algorithms, and complexity analysis.
-            </p>
-        </div>
+        <div class="projects-grid">
+            <div class="project-tile" onclick="showProjectDetails('ece391')">
+                <div class="tile-header">
+                    <h3>ECE 428: Distributed Sytems</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Advanced algorithms including dynamic programming, graph algorithms, and complexity analysis</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
 
-        <div class="project-section">
-            <h3 style="color: #FFECD1;">> CS 225: Data Structures</h3>
-            <p style="color: #15616d; font-size: 1.2em; margin-left: 2em;">
-                Built efficient data structures including BSTs, heaps, and hash tables with comprehensive testing.
-            </p>
-        </div>
+            <div class="project-tile" onclick="showProjectDetails('ece391')">
+                <div class="tile-header">
+                    <h3>ECE 470: Introduction to Robotics</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Advanced algorithms including dynamic programming, graph algorithms, and complexity analysis</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
 
-        <div class="project-section">
-            <h3 style="color: #FFECD1;">> ECE 220: Computer Systems & Programming</h3>
-            <p style="color: #15616d; font-size: 1.2em; margin-left: 2em;">
-                Developed low-level system programming skills in C and assembly language.
-            </p>
+            <div class="project-tile" onclick="showProjectDetails('ece391')">
+                <div class="tile-header">
+                    <h3>ECE 385: Digital Systems Laboratory</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Advanced algorithms including dynamic programming, graph algorithms, and complexity analysis</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ece391')">
+                <div class="tile-header">
+                    <h3>ECE 397: Humanoid Robotics Project</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Advanced algorithms including dynamic programming, graph algorithms, and complexity analysis</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ece391')">
+                <div class="tile-header">
+                    <h3>ECE 391: Computer Systems Engineering</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Advanced algorithms including dynamic programming, graph algorithms, and complexity analysis</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ece408')">
+                <div class="tile-header">
+                    <h3>ECE 408: Applied Parallel Computing</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Efficient data structures including BSTs, heaps, and hash tables with comprehensive testing</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('cs225')">
+                <div class="tile-header">
+                    <h3>CS 225: Data Structures</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Low-level system programming skills in C and assembly language</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ece220')">
+                <div class="tile-header">
+                    <h3>ECE 220: Computer Systems & Programming</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Low-level system programming skills in C and assembly language</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ece313')">
+                <div class="tile-header">
+                    <h3>ECE 313: Probability with Engineering Applications</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Probability theory and statistical analysis for engineering problems</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ece210')">
+                <div class="tile-header">
+                    <h3>ECE 210: Analog Signal Processing</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Analog signal processing and circuit analysis</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ece120')">
+                <div class="tile-header">
+                    <h3>ECE 120: Introduction to Computing</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Fundamentals of computing and programming</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ece110')">
+                <div class="tile-header">
+                    <h3>ECE 110: Introduction to Electronics</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Basic electronics and circuit design principles</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('computer-vision')">
+                <div class="tile-header">
+                    <h3>Computer Vision Class</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Computer vision algorithms and image processing techniques</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('ai-class')">
+                <div class="tile-header">
+                    <h3>Artificial Intelligence Class</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>AI algorithms, machine learning, and intelligent systems</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('robotics-class')">
+                <div class="tile-header">
+                    <h3>Robotics Class</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Robotics principles, control systems, and automation</p>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
         </div>
 
         <h2 style="color: #e76f51;">> Research Projects</h2>
         
-        <div class="project-section">
-            <h3 style="color: #FFECD1;">> Research Area: [Research Topic]</h3>
-            <p style="color: #15616d; font-size: 1.2em; margin-left: 2em;">
-                Description of your research work. What problems are you investigating? 
-                What methodologies are you using? Any publications or presentations?
-            </p>
-            <p style="color: #e76f51; margin-left: 2em;">
-                > Advisor: [Professor Name] | 
-                > <a href="#" target="_blank">View Paper</a> | 
-                > <a href="#" target="_blank">Presentation</a>
-            </p>
+        <div class="projects-grid">
+            <div class="project-tile" onclick="showProjectDetails('uiuc-robotics')">
+                <div class="tile-header">
+                    <h3>UIUC Robotics Research</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Robotics research at University of Illinois Urbana-Champaign</p>
+                    <div class="research-info">
+                        <span>Advisor: [Professor Name]</span>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('dartmouth-pathology')">
+                <div class="tile-header">
+                    <h3>Dartmouth Hitchcock Medical Center Pathology Research</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Medical pathology research and analysis</p>
+                    <div class="research-info">
+                        <span>Advisor: [Professor Name]</span>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('tjhsst-robotics')">
+                <div class="tile-header">
+                    <h3>TJHSST Robotics Research</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>High school robotics research and development</p>
+                    <div class="research-info">
+                        <span>Advisor: [Professor Name]</span>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
+
+            <div class="project-tile" onclick="showProjectDetails('gpt-inference')">
+                <div class="tile-header">
+                    <h3>Parallelizing GPT Inference</h3>
+                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                </div>
+                <div class="tile-content">
+                    <p>Research on parallel processing for GPT model inference</p>
+                    <div class="research-info">
+                        <span>Advisor: [Professor Name]</span>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
+                </div>
+            </div>
         </div>
 
         <h2 style="color: #e76f51;">> Skills & Technologies</h2>
         
-        <div class="skills-section">
-            <p style="color: #FFECD1; margin-left: 2em;">
-                > Programming Languages: C++, Python, Java, JavaScript, C
-            </p>
-            <p style="color: #FFECD1; margin-left: 2em;">
-                > Web Technologies: HTML, CSS, React, Node.js
-            </p>
-            <p style="color: #FFECD1; margin-left: 2em;">
-                > Tools & Platforms: Git, Linux, Docker, AWS
-            </p>
-            <p style="color: #FFECD1; margin-left: 2em;">
-                > Areas: Computer Vision, Machine Learning, Algorithms, Systems Programming
-            </p>
-        </div> -->
-        
+        <div class="skills-grid">
+            <div class="skill-tile">
+                <h3>Programming Languages</h3>
+                <p>C++, Python, Java, JavaScript, C</p>
+            </div>
+            <div class="skill-tile">
+                <h3>Web Technologies</h3>
+                <p>HTML, CSS, React, Node.js</p>
+            </div>
+            <div class="skill-tile">
+                <h3>Tools & Platforms</h3>
+                <p>Git, Linux, Docker, AWS</p>
+            </div>
+            <div class="skill-tile">
+                <h3>Areas of Expertise</h3>
+                <p>Robotics, Computer Vision, Machine Learning, Algorithms, Systems Programming</p>
+            </div>
+        </div>
+
+        <!-- Project Details Modal -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalContent"></div>
+            </div>
+        </div>
 
         <br>
         <h2 style="color: #e76f51;">><a href="index.html"> -view info</a><span class="blink">|</span></h2>
         <!-- <h2 style="color: #e76f51;">><a href="static/Ram_Reddy_Resume.pdf" target="_blank"> -view resume</a><span class="blink">|</span></h2> -->
         <h2 style="color: #e76f51;">><a href="contact.html"> -view contact</a><span class="blink">|</span></h2>
     </div>
+
+    <script>
+        // Project details data
+        const projectDetails = {
+            'home-storage': {
+                title: 'Home Storage Server',
+                description: 'A personal storage solution for home use with advanced file management capabilities.',
+                technologies: ['Python', 'Django', 'PostgreSQL', 'Docker'],
+                demo: '#',
+                source: '#',
+                status: 'COMPLETED'
+            },
+            'healthy-chimp': {
+                title: 'Healthy Chimp',
+                description: 'Health and wellness application for tracking fitness goals and nutrition.',
+                technologies: ['React Native', 'Node.js', 'MongoDB', 'Express'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'crisisvision': {
+                title: 'Crisisvision',
+                description: 'Crisis management and visualization tool for emergency response coordination.',
+                technologies: ['Python', 'Flask', 'D3.js', 'PostgreSQL'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'cloud-computing': {
+                title: 'Cloud Computing Website',
+                description: 'Cloud computing services platform with resource management and monitoring.',
+                technologies: ['React', 'Node.js', 'AWS', 'Docker'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'django-ecommerce': {
+                title: 'Django Ecommerce Platform',
+                description: 'Full-featured ecommerce solution with payment processing and inventory management.',
+                technologies: ['Django', 'Python', 'PostgreSQL', 'Stripe'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'ml-projects': {
+                title: 'Various ML Projects',
+                description: 'Collection of machine learning projects including image classification, NLP, and predictive modeling.',
+                technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'OpenCV'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'asteroids': {
+                title: 'Asteroids',
+                description: 'Classic asteroids game implementation with modern graphics and physics.',
+                technologies: ['C++', 'OpenGL', 'SDL2', 'Box2D'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'drowsiness-detection': {
+                title: 'Drowsiness Detection App',
+                description: 'Computer vision-based safety application for detecting driver drowsiness.',
+                technologies: ['Python', 'OpenCV', 'TensorFlow', 'Flask'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'smartdisposal': {
+                title: 'SmartDisposal',
+                description: 'Smart waste management system with IoT sensors and mobile app.',
+                technologies: ['React Native', 'Node.js', 'IoT', 'MongoDB'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'foodsaver': {
+                title: 'FoodSaver',
+                description: 'Food waste reduction application with inventory tracking and recipe suggestions.',
+                technologies: ['React', 'Node.js', 'PostgreSQL', 'Express'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'covid19-app': {
+                title: 'COVID-19 App',
+                description: 'COVID-19 tracking and information app with real-time data and safety guidelines.',
+                technologies: ['Flutter', 'Dart', 'Firebase', 'REST API'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            },
+            'cashoutcookie': {
+                title: 'CashOutCookie',
+                description: 'Financial management application for budgeting and expense tracking.',
+                technologies: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
+                demo: '#',
+                source: '#',
+                status: 'UNDER MAINTENANCE'
+            }
+        };
+
+        // Modal functionality
+        const modal = document.getElementById('projectModal');
+        const modalContent = document.getElementById('modalContent');
+        const closeBtn = document.getElementsByClassName('close')[0];
+
+        function showProjectDetails(projectId) {
+            const project = projectDetails[projectId];
+            if (project) {
+                modalContent.innerHTML = `
+                    <h2>${project.title}</h2>
+                    <p><strong>Status:</strong> <span class="status ${project.status.toLowerCase().replace(' ', '-')}">${project.status}</span></p>
+                    <p><strong>Description:</strong> ${project.description}</p>
+                    <p><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>
+                    <div class="modal-links">
+                        <a href="${project.demo}" target="_blank" class="demo-link">View Demo</a>
+                        <a href="${project.source}" target="_blank" class="source-link">Source Code</a>
+                    </div>
+                `;
+                modal.style.display = 'block';
+            }
+        }
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>
