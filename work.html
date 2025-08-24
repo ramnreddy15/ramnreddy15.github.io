@@ -64,14 +64,14 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('crisisvision')">
+            <div class="project-tile" onclick="showProjectDetails('lifecycle')">
                 <div class="tile-header">
                     <h3>LifeCycle</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Crisis management and visualization tool</p>
-                    <div class="tech-stack">[Tech Stack]</div>
+                    <p>A smart tool that helps users find nearby recycling and disposal centers for everyday materials.</p>
+                    <div class="tech-stack">Java, Android, SQLite, Expo, ExpressJS, NodeJS, Railway, MapBoxGL, Coco</div>
                 </div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
@@ -81,11 +81,11 @@
             <div class="project-tile" onclick="showProjectDetails('cloud-computing')">
                 <div class="tile-header">
                     <h3>Cloud Computing Website</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Cloud computing services platform</p>
-                    <div class="tech-stack">[Tech Stack]</div>
+                    <p>Cloud computing website for club</p>
+                    <div class="tech-stack">Handlebars, ExpressJS, CSS, Shell</div>
                 </div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
@@ -546,15 +546,24 @@
                 images: ['static/crisisvision.jpg'],
                 demo: 'https://www.youtube.com/watch?v=H-ocT0HjJQU',
                 source: 'https://github.com/ramnreddy15/CrisisVision',
-                status: 'Completed'
+                competition: 'https://devpost.com/software/crisisvision',
+                status: 'COMPLETED'
+            },
+            'lifecycle': {
+                title: 'LifeCycle',
+                description: 'I was inspired by the day-to-day problems we have when it comes to throwing away materials. While everyone knows that it is important to separate recyclables and items that will go to landfills, not everyone can actually afford recycling and trash pickup services. Additionally, not everyone is aware of the various ways some materials have to be disposed of — like how tires need to be dropped off at Recycling and Disposal Facilities, such as ones in I-66 and I-95 in Virginia, or how medicine can be dropped off at pharmacy chains, such as CVS or Walgreens. LifeCycle circumvents all of these issues by informing users of nearby disposal centers in a convenient way. Won the Congressional App Challenge 2021.',
+                technologies: ['Java', 'Android', 'SQLite', 'Expo', 'ExpressJS', 'NodeJS', 'Railway', 'MapBoxGL', 'Coco'],
+                demo: 'https://youtu.be/cGogikaRF2I',
+                source: 'https://github.com/MiscProjectsTJ/LifeCycle',
+                competition: 'https://www.congressionalappchallenge.us/21-VA08/',
+                status: 'COMPLETED'
             },
             'cloud-computing': {
                 title: 'Cloud Computing Website',
-                description: 'Cloud computing services platform with resource management and monitoring.',
-                technologies: ['React', 'Node.js', 'AWS', 'Docker'],
-                demo: '#',
-                source: '#',
-                status: 'UNDER MAINTENANCE'
+                description: 'Built a website for the cloud computing club.',
+                technologies: ['Handlebars', 'ExpressJS', 'CSS', 'Shell'],
+                source: 'https://github.com/ramnreddy15/CloudComputingClubWebsite',
+                status: 'COMPLETED'
             },
             'django-ecommerce': {
                 title: 'Django Ecommerce Platform',
@@ -630,9 +639,17 @@
         function showProjectDetails(projectId) {
             const project = projectDetails[projectId];
             if (project) {
-                let links = `<a href="${project.demo}" target="_blank" class="demo-link">View Demo</a>`;
+                let links = ''
+                if (project.demo) {
+                    links += `<a href="${project.demo}" target="_blank" class="demo-link">View Demo</a>`;
+                }
+                
                 if (project.source) {
                     links += `<a href="${project.source}" target="_blank" class="source-link">Source Code</a>`;
+                }
+
+                if (project.competition) {
+                    links +=`<a href="${project.competition}" target="_blank" class="source-link">Competition Link</a>`;
                 }
 
                 let images = ''
