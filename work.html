@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="static/website.css">
     <title>Ram Reddy - Work & Projects</title>
+    <link rel="icon" href="static/r.png">
 </head>
 
 <body class="blockContent">
@@ -95,11 +96,11 @@
             <div class="project-tile" onclick="showProjectDetails('django-ecommerce')">
                 <div class="tile-header">
                     <h3>Django Ecommerce Platform</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Full-featured ecommerce solution</p>
-                    <div class="tech-stack">[Tech Stack]</div>
+                    <p>Ecommerce solution using django</p>
+                    <div class="tech-stack">Django, Python, HTML</div>
                 </div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
@@ -109,11 +110,11 @@
             <div class="project-tile" onclick="showProjectDetails('ml-projects')">
                 <div class="tile-header">
                     <h3>Various ML Projects</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
                     <p>Collection of machine learning projects</p>
-                    <div class="tech-stack">[Tech Stack]</div>
+                    <div class="tech-stack">Python, PyTorch, TensorFlow, Jupyter Notebook, Numpy, Pandas, Matplotlib, Scikit-learn</div>
                 </div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
@@ -123,11 +124,11 @@
             <div class="project-tile" onclick="showProjectDetails('asteroids')">
                 <div class="tile-header">
                     <h3>Asteroids</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
                     <p>Classic asteroids game implementation</p>
-                    <div class="tech-stack">[Tech Stack]</div>
+                    <div class="tech-stack">Java, Java Swing</div>
                 </div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
@@ -141,20 +142,6 @@
                 </div>
                 <div class="tile-content">
                     <p>Computer vision-based safety application</p>
-                    <div class="tech-stack">[Tech Stack]</div>
-                </div>
-                <div class="tile-footer">
-                    <span class="click-hint">Click to view details</span>
-                </div>
-            </div>
-
-            <div class="project-tile" onclick="showProjectDetails('smartdisposal')">
-                <div class="tile-header">
-                    <h3>SmartDisposal</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
-                </div>
-                <div class="tile-content">
-                    <p>Smart waste management system</p>
                     <div class="tech-stack">[Tech Stack]</div>
                 </div>
                 <div class="tile-footer">
@@ -545,16 +532,16 @@
                 technologies: ['Numpy', 'Threading', 'Sockets', 'OpenCV', 'Ultralytics', 'Raspberry Pi'],
                 images: ['static/crisisvision.jpg'],
                 demo: 'https://www.youtube.com/watch?v=H-ocT0HjJQU',
-                source: 'https://github.com/ramnreddy15/CrisisVision',
+                source: ['https://github.com/ramnreddy15/CrisisVision'],
                 competition: 'https://devpost.com/software/crisisvision',
                 status: 'COMPLETED'
             },
             'lifecycle': {
                 title: 'LifeCycle',
-                description: 'I was inspired by the day-to-day problems we have when it comes to throwing away materials. While everyone knows that it is important to separate recyclables and items that will go to landfills, not everyone can actually afford recycling and trash pickup services. Additionally, not everyone is aware of the various ways some materials have to be disposed of — like how tires need to be dropped off at Recycling and Disposal Facilities, such as ones in I-66 and I-95 in Virginia, or how medicine can be dropped off at pharmacy chains, such as CVS or Walgreens. LifeCycle circumvents all of these issues by informing users of nearby disposal centers in a convenient way. Won the Congressional App Challenge 2021.',
+                description: 'I was inspired by the day-to-day problems we have when it comes to throwing away materials. While everyone knows that it is important to separate recyclables and items that will go to landfills, not everyone can actually afford recycling and trash pickup services. Additionally, not everyone is aware of the various ways some materials have to be disposed of — like how tires need to be dropped off at Recycling and Disposal Facilities, such as ones in I-66 and I-95 in Virginia, or how medicine can be dropped off at pharmacy chains, such as CVS or Walgreens. LifeCycle circumvents all of these issues by informing users of nearby disposal centers in a convenient way. Won the Congressional App Challenge 2021 and HackTJ 9.0.',
                 technologies: ['Java', 'Android', 'SQLite', 'Expo', 'ExpressJS', 'NodeJS', 'Railway', 'MapBoxGL', 'Coco'],
                 demo: 'https://youtu.be/cGogikaRF2I',
-                source: 'https://github.com/MiscProjectsTJ/LifeCycle',
+                source: ['https://github.com/MiscProjectsTJ/LifeCycle'],
                 competition: 'https://www.congressionalappchallenge.us/21-VA08/',
                 status: 'COMPLETED'
             },
@@ -562,45 +549,35 @@
                 title: 'Cloud Computing Website',
                 description: 'Built a website for the cloud computing club.',
                 technologies: ['Handlebars', 'ExpressJS', 'CSS', 'Shell'],
-                source: 'https://github.com/ramnreddy15/CloudComputingClubWebsite',
+                source: ['https://github.com/ramnreddy15/CloudComputingClubWebsite'],
                 status: 'COMPLETED'
             },
             'django-ecommerce': {
                 title: 'Django Ecommerce Platform',
-                description: 'Full-featured ecommerce solution with payment processing and inventory management.',
-                technologies: ['Django', 'Python', 'PostgreSQL', 'Stripe'],
-                demo: '#',
-                source: '#',
-                status: 'UNDER MAINTENANCE'
+                description: 'A basic django eccomerce solution that has both a user and management interface. It allows users to buy products and records all transaction in the SQL database.',
+                technologies: ['Django', 'Python', 'HTML'],
+                source: ['https://github.com/ramnreddy15/djangoEcommerce'],
+                status: 'COMPLETED'
             },
             'ml-projects': {
                 title: 'Various ML Projects',
                 description: 'Collection of machine learning projects including image classification, NLP, and predictive modeling.',
-                technologies: ['Python', 'TensorFlow', 'Scikit-learn', 'OpenCV'],
-                demo: '#',
-                source: '#',
-                status: 'UNDER MAINTENANCE'
+                technologies: ['Python', 'PyTorch', 'TensorFlow', 'Jupyter Notebook', 'Numpy', 'Pandas', 'Matplotlib', 'Scikit-learn'],
+                source: ['https://github.com/ramnreddy15/TJML-Contests-2020-2021', 'https://github.com/ramnreddy15/EDITInternship', 'https://github.com/ramnreddy15/ML-Course'],
+                status: 'COMPLETED'
             },
             'asteroids': {
                 title: 'Asteroids',
-                description: 'Classic asteroids game implementation with modern graphics and physics.',
-                technologies: ['C++', 'OpenGL', 'SDL2', 'Box2D'],
-                demo: '#',
-                source: '#',
-                status: 'UNDER MAINTENANCE'
+                description: 'Classic asteroids game implementation with graphics and physics.',
+                technologies: ['Java', 'Java Swing'],
+                demo: 'https://www.youtube.com/watch?v=5zpnk9-PEjA',
+                source: ['https://github.com/ramnreddy15/AsteroidsTheGame'],
+                status: 'COMPLETED'
             },
             'drowsiness-detection': {
                 title: 'Drowsiness Detection App',
                 description: 'Computer vision-based safety application for detecting driver drowsiness.',
                 technologies: ['Python', 'OpenCV', 'TensorFlow', 'Flask'],
-                demo: '#',
-                source: '#',
-                status: 'UNDER MAINTENANCE'
-            },
-            'smartdisposal': {
-                title: 'SmartDisposal',
-                description: 'Smart waste management system with IoT sensors and mobile app.',
-                technologies: ['React Native', 'Node.js', 'IoT', 'MongoDB'],
                 demo: '#',
                 source: '#',
                 status: 'UNDER MAINTENANCE'
@@ -643,9 +620,16 @@
                 if (project.demo) {
                     links += `<a href="${project.demo}" target="_blank" class="demo-link">View Demo</a>`;
                 }
-                
-                if (project.source) {
-                    links += `<a href="${project.source}" target="_blank" class="source-link">Source Code</a>`;
+
+                if (project.source && project.source.length > 0) {
+                    if(project.source.length == 1) {
+                        links += `<a href="${project.source}" target="_blank" class="source-link">Source Code</a>`;
+                    } else{
+                        project.source.forEach((element, index) => {
+                            links += `<a href="${element}" target="_blank" class="source-link">Source Code ${index+1}</a>`;
+                        });
+                    }
+
                 }
 
                 if (project.competition) {

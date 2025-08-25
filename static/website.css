@@ -383,11 +383,14 @@ a:active {
   margin-top: 2em;
   margin-bottom: 1em;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
 }
 
 .modal-links a {
   display: inline-block;
-  margin: 0 1em;
   padding: 0.8em 1.5em;
   background: linear-gradient(135deg, #e76f51, #ff7d00);
   color: #001524;
@@ -395,6 +398,7 @@ a:active {
   border-radius: 25px;
   font-weight: bold;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .modal-links a:hover {
