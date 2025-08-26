@@ -62,6 +62,14 @@ a:active {
   
   */
 
+  .about-section {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-left: 3px solid #e76f51;
+    background-color: rgba(21, 97, 109, 0.1);
+    border-radius: 8px;
+  }
+
 /* Project section styling */
 .project-section {
   margin-bottom: 2em;
@@ -406,7 +414,122 @@ a:active {
   box-shadow: 0 5px 15px rgba(231, 111, 81, 0.4);
 }
 
-/* Responsive design for smaller screens */
+/* Achievements section styling */
+.achievements-section {
+  margin-bottom: 2em;
+  padding: 1.5em;
+  border-left: 3px solid #e76f51;
+  background-color: rgba(21, 97, 109, 0.1);
+  border-radius: 8px;
+}
+
+.achievements-section h2 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+
+.achievements-section p {
+  color: #FFECD1;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0.8em 0;
+}
+
+/* Featured Projects Section Styles */
+.featured-projects-section {
+  margin-bottom: 3em;
+}
+
+.featured-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  margin-top: 1.5em;
+}
+
+.featured-project-tile {
+  background: rgba(21, 97, 109, 0.1);
+  border: 2px solid #15616d;
+  border-radius: 8px;
+  padding: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.featured-project-tile:hover {
+  border-color: #e76f51;
+  background: rgba(21, 97, 109, 0.2);
+  transform: translateY(-2px);
+}
+
+.featured-tile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+.featured-tile-header h3 {
+  color: #FFECD1;
+  font-size: 1.4em;
+  margin: 0;
+  flex: 1;
+  margin-right: 1em;
+}
+
+.featured-tile-content {
+  margin-bottom: 1em;
+}
+
+.featured-tile-content p {
+  color: #FFECD1;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0.8em 0;
+}
+
+.featured-tile-content .tech-stack {
+  color: #e76f51;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.featured-tile-footer {
+  text-align: center;
+  padding-top: 1em;
+  border-top: 1px solid rgba(21, 97, 109, 0.3);
+}
+
+.featured-tile-footer .click-hint {
+  color: #FF7D00;
+  font-size: 0.8em;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Status styling */
+.status {
+  padding: 0.3em 0.8em;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.status.completed {
+  background-color: #78290f;
+  color: #FFECD1;
+}
+
+.status.maintenance {
+  background-color: #ff7d00;
+  color: #001524;
+}
+
+/* Responsive design for featured projects */
 @media (max-width: 768px) {
   .blockContent {
     margin-left: 10%;
@@ -453,4 +576,16 @@ a:active {
     margin-right: 0;
     margin-bottom: 0.5em;
   }
+
+  .featured-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
+
+/* Custom styling for Ram's name */
+strong {
+  color: #e76f51;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(231, 111, 81, 0.3);
 }

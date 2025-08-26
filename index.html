@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FBDWY9J5GE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FBDWY9J5GE');
+</script>
+
+
 <head>
     <title>Ram Reddy - Portfolio</title>
     <link rel="stylesheet" href="static/website.css">
@@ -11,7 +23,119 @@
     <div>
         <h1>><span class="command"> Ram Reddy -info</span></h1>
         <img src="static/me.jpg" alt="Image of Me" class="img">
-        <h2>Hello! My name is Ram Reddy and I am currently studying Computer Engineering at the University of Illinois at Urbana-Champaign.</h2>
+        <div class="about-section">
+            <h2 style="font-size: 1.8em; color: #FFECD1; line-height: 1.5; margin: 1em 0;">
+                Hello! I'm <strong>Ram Reddy</strong>, a Computer Engineering student at the University of Illinois at Urbana-Champaign, 
+                committed to creating impact by addressing real-world challenges within the fields of systems, robotics, and AI.
+            </h2>
+            
+            <h2 style="font-size: 1.8em; color: #FFECD1; line-height: 1.5; margin: 1em 0;">
+                As a developer, researcher, and innovator, I proficiently navigate multiple roles and responsibilities. 
+                Confronting challenges directly is central to my professional philosophy. I believe in building solutions 
+                that not only solve technical problems but also create meaningful impact in people's lives.
+            </h2>
+        </div>
+
+        
+
+        <div class="achievements-section">
+            <h2 style="color: #e76f51;">> Highlighted Achievements</h2>
+            <p><strong>Pulse Overdrive Hackathon Winner</strong> - 4x Meta Quest Headsets for HealthyChimp fitness AI system</p>
+            <p><strong>Research Experience</strong> - Multiple experiences and papers published at UIUC, Dartmouth Medical Center, and TJHSST</p>
+            <p><strong>Congressional App Challenge Winner</strong> - LifeCycle app for sustainable waste management</p>
+            <p><strong>Y Combinator AI Startup School</strong> - Selected from one of 20,000+ applicants to attend the prestigious AI startup program in San Francisco</p>
+        </div>
+        
+        <!-- Featured Projects Section -->
+        <div class="featured-projects-section">
+            <h2 style="color: #e76f51;">> Featured Projects</h2>
+            <div class="featured-projects-grid">
+                <div class="featured-project-tile" onclick="window.location.href='work.html#ece391'">
+                    <div class="featured-tile-header">
+                        <h3>Operating System</h3>
+                        <span class="status maintenance">UNDER MAINTENANCE</span>
+                    </div>
+                    <div class="featured-tile-content">
+                        <p>Built an operating system that can run DOOM and now assisting with course material</p>
+                        <div class="tech-stack">C, Assembly, Systems Programming</div>
+                    </div>
+                    <div class="featured-tile-footer">
+                        <span class="click-hint">Click to view details</span>
+                    </div>
+                </div>
+
+                <div class="featured-project-tile" onclick="window.location.href='work.html#healthy-chimp'">
+                    <div class="featured-tile-header">
+                        <h3>HealthyChimp</h3>
+                        <span class="status completed">COMPLETED</span>
+                    </div>
+                    <div class="featured-tile-content">
+                        <p>End-to-end fitness AI system with smart glove integration and real-time form analysis</p>
+                        <div class="tech-stack">Python, OpenCV, Arduino, Ultralytics, Flask</div>
+                    </div>
+                    <div class="featured-tile-footer">
+                        <span class="click-hint">Click to view details</span>
+                    </div>
+                </div>
+
+                <div class="featured-project-tile" onclick="window.location.href='work.html#crisisvision'">
+                    <div class="featured-tile-header">
+                        <h3>CrisisVision</h3>
+                        <span class="status completed">COMPLETED</span>
+                    </div>
+                    <div class="featured-tile-content">
+                        <p>Autonomous surveillance vehicle for mapping dangerous environments and detecting survivors</p>
+                        <div class="tech-stack">OpenCV, Ultralytics, Raspberry Pi, Computer Vision</div>
+                    </div>
+                    <div class="featured-tile-footer">
+                        <span class="click-hint">Click to view details</span>
+                    </div>
+                </div>
+
+                <div class="featured-project-tile" onclick="window.location.href='work.html#gpt-inference'">
+                    <div class="featured-tile-header">
+                        <h3>Parallelizing GPT Inference</h3>
+                        <span class="status maintenance">UNDER MAINTENANCE</span>
+                    </div>
+                    <div class="featured-tile-content">
+                        <p>Research on parallel processing for GPT model inference optimization</p>
+                        <div class="tech-stack">Python, PyTorch, Parallel Computing</div>
+                    </div>
+                    <div class="featured-tile-footer">
+                        <span class="click-hint">Click to view details</span>
+                    </div>
+                </div>
+
+                <div class="featured-project-tile" onclick="window.location.href='work.html#uiuc-robotics'">
+                    <div class="featured-tile-header">
+                        <h3>KIMLAB Robotics</h3>
+                        <span class="status maintenance">UNDER MAINTENANCE</span>
+                    </div>
+                    <div class="featured-tile-content">
+                        <p>Robotics research at UIUC working on humanoid robotics and autonomous systems</p>
+                        <div class="tech-stack">Robotics, Computer Vision, Control Systems</div>
+                    </div>
+                    <div class="featured-tile-footer">
+                        <span class="click-hint">Click to view details</span>
+                    </div>
+                </div>
+
+                <div class="featured-project-tile" onclick="window.location.href='work.html#dartmouth-pathology'">
+                    <div class="featured-tile-header">
+                        <h3>Dartmouth Medical Research</h3>
+                        <span class="status maintenance">UNDER MAINTENANCE</span>
+                    </div>
+                    <div class="featured-tile-content">
+                        <p>Medical pathology research and analysis at Dartmouth Hitchcock Medical Center</p>
+                        <div class="tech-stack">Medical AI, Data Analysis, Research</div>
+                    </div>
+                    <div class="featured-tile-footer">
+                        <span class="click-hint">Click to view details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <br>
 
         <!-- <h2 style="color: #e76f51;">><a href="static/Ram_Reddy_Resume.pdf" target="_blank"> -view resume</a><span class="blink">|</span></h2> -->
