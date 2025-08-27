@@ -263,10 +263,10 @@
             <div class="project-tile" onclick="showProjectDetails('ece408')">
                 <div class="tile-header">
                     <h3>ECE 408: Applied Parallel Computing</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Efficient data structures including BSTs, heaps, and hash tables with comprehensive testing</p>
+                    <p>Explored parallel programming models and optimized algorithms for GPU-accelerated computing with CUDA</p>
                 </div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
@@ -276,7 +276,7 @@
             <div class="project-tile" onclick="showProjectDetails('ece313')">
                 <div class="tile-header">
                     <h3>ECE 313: Probability with Engineering Applications</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
                     <p>Probability theory and statistical analysis for engineering problems</p>
@@ -332,7 +332,7 @@
             <div class="project-tile" onclick="showProjectDetails('gpt-inference')">
                 <div class="tile-header">
                     <h3>Parallelizing GPT Inference</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
                     <p>Research on parallel processing for GPT model inference</p>
@@ -347,13 +347,13 @@
 
             <div class="project-tile" onclick="showProjectDetails('uiuc-robotics')">
                 <div class="tile-header">
-                    <h3>Kinetic Intelligent Machine LAB (KIMLAB)</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <h3>Vision Free Robotic Grasping</h3>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Robotics research at University of Illinois Urbana-Champaign</p>
+                    <p>Robotics research at Kinetic Intelligent Machine LAB in the University of Illinois Urbana-Champaign</p>
                     <div class="research-info">
-                        <span>Advisor: Joohyung Kim</span>
+                        <span>Advisor: Professor Joohyung Kim</span>
                     </div>
                     <div class="research-info">
                         <span>Mentors: Sean Taylor, Sankalp Yasmani, Obin Kwon, and Jooyoung Hong</span>
@@ -367,12 +367,12 @@
             <div class="project-tile" onclick="showProjectDetails('dartmouth-pathology')">
                 <div class="tile-header">
                     <h3>Dartmouth Hitchcock Medical Center Pathology Research</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Medical pathology research and analysis</p>
+                    <p>Machine learning research and analysis</p>
                     <div class="research-info">
-                        <span>Advisors: Joshua Levy and Louis Vaickus</span>
+                        <span>Advisors: Professors Joshua Levy and Louis Vaickus</span>
                     </div>
                 </div>
                 <div class="tile-footer">
@@ -382,8 +382,8 @@
 
             <div class="project-tile" onclick="showProjectDetails('tjhsst-robotics')">
                 <div class="tile-header">
-                    <h3>TJHSST Robotics Research</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <h3>Building Baymax</h3>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
                     <p>High school robotics research and development</p>
@@ -402,19 +402,19 @@
         <div class="skills-grid">
             <div class="skill-tile">
                 <h3>Programming Languages</h3>
-                <p>C++, Python, Java, JavaScript, C</p>
+                <p>C++, Python, Java, JavaScript, C, GO, Rust</p>
             </div>
             <div class="skill-tile">
                 <h3>Web Technologies</h3>
-                <p>HTML, CSS, React, Node.js</p>
+                <p>HTML, CSS, React, Node.js, Express.js, Django, Handlebars</p>
             </div>
             <div class="skill-tile">
                 <h3>Tools & Platforms</h3>
-                <p>Git, Linux, Docker, AWS</p>
+                <p>Git, Linux, Docker, CUDA, ROS, Arduino, Raspberry Pi, SLURM</p>
             </div>
             <div class="skill-tile">
                 <h3>Areas of Expertise</h3>
-                <p>Robotics, Computer Vision, Machine Learning, Algorithms, Systems Programming</p>
+                <p>Robotics, Computer Vision, Machine Learning, Algorithms, Systems Programming, Parallel Computing, Embedded Systems</p>
             </div>
         </div>
 
@@ -553,7 +553,55 @@
                 technologies: ['Radio', 'Oscilloscope', 'Voltage Generator', 'Waveform Generator', 'Power Supply'],
                 images: ['static/rf.jpg'],
                 status: 'COMPLETED'
-            }
+            },
+            'ece313': {
+                title: 'ECE 313: Probability with Engineering Applications',
+                description: 'Probability theory with applications to engineering problems such as the reliability of circuits and systems to statistical methods for hypothesis testing, decision making under uncertainty, and parameter estimation. Worked on project related to prediction of alarms in patient data using statistical methods like ML, MAP, and neural networks.',
+                technologies: ['Python', 'Jupyter Notebook', 'Pandas', 'Numpy', 'Matplotlib', 'Scipy'],
+                source: ['https://github.com/ramnreddy15/ECE313_Projects'],
+                images: ['static/313-1.png','static/313-2.png'],
+                status: 'COMPLETED'
+            },
+            'tjhsst-robotics': {
+                title: 'Building Baymax',
+                description: 'This was the senior year research project in TJHSST where we attempted to build a mockup of Baymax from the movie Big Hero 6. The robot has a soft plastic exterior and has a raspberry pi as an onboard controller for the motors and audio system. These components along with all software for this project was designed at the Automation and Robotics Lab.',
+                technologies: ['Python', 'OpenAI', 'pyttsx3', 'Sockets', 'Threading', 'Arduino'],
+                source: ['https://github.com/ramnreddy15/SocialRobot'],
+                images: ['static/sir.jpg'],
+                demo:'https://youtu.be/Gx1UDyidZWU',
+                status: 'COMPLETED'
+            },
+            'dartmouth-pathology': {
+                title: 'Dartmouth Hitchcock Medical Center Pathology Research',
+                description: 'Multiple summers of machine learning research at the Emerging Diagnostic and Investigative Technologies program under Dr. Joshua Levy which culminated in an international conference in Amsterdam. I explored many evenues of machine learning like detection, graph neural networks, and self supervied learning. I worked with Detectron2, PyTorch Lightning and many other state of the art libraries and tools.',
+                technologies: ['Python', 'Jupyter Notebook', 'SLURM', 'Threading', 'Pytorch', 'NN', 'CNN', 'GNN', 'Pandas', 'Numpy', 'Matplotlib', 'PCA', 'Statistics', 'Handling Large Data'],
+                source: ['https://proceedings.mlr.press/v194/reddy22a/reddy22a.pdf','https://www.sciencedirect.com/science/article/abs/pii/S2589408023000029','https://www.sciencedirect.com/science/article/abs/pii/S2589408023000017','https://geomedia-workshop.github.io/','https://jlevy44.github.io/levylab/'],
+                images: ['static/edit-1.jpg', 'static/edit-2.png'],
+                status: 'COMPLETED'
+            },
+            'ece408': {
+                title: 'ECE 408: Applied Parallel Computing',
+                description: 'I explored parallel programming with NVIDIA CUDA, focusing on how to map computations efficiently to GPUs with thousands of cores. I implemented and optimized algorithms such as matrix multiplication, histogram equalization, and parallel scan (prefix-sum), applying different programming models and memory hierarchies to achieve significant speedups over CPU implementations. Along the way, I gained experience with computational thinking for parallel systems, efficient data structures, and design paradigms for scalable algorithms. This work gave me practical insight into the challenges of parallel programming, including memory coalescing, synchronization, and workload balancing, while also highlighting the real-world impact of GPU acceleration in high-performance computing.',
+                technologies: ['CUDA', 'C++', 'SLURM'],
+                status: 'COMPLETED'
+            },
+            'uiuc-robotics': {
+                title: 'Vision Free Robotic Grasping',
+                description: 'Here I researched vision free robotic grasping, object recognition, and 3D shape estimation using a soft tactile sensor hand driven by air pressure. I developed and tested ROS-based scripts to implement dynamic pressure thresholds for grasp detection and implemented various hand poses for object interaction. I used forward kinematics to estimate 3D object geometry from tactile data, improving recognition in occluded or low-light environments. I collected data with ros bags and analyzed pressure data using MATLAB. I also collected data using mock robotic hands to be used for later projects.',
+                technologies: ['ROS', 'C++', 'MATLAB', 'Kinematics', 'Data Analysis'],
+                source: ['https://github.com/ramnreddy15/TRI_HAND', 'static/hand.pdf'],
+                images: ['static/objects.jpg','static/hand-2.png'],
+                demo:'https://youtu.be/0GnljFADQi8',
+                status: 'COMPLETED'
+            },
+            'gpt-inference': {
+                title: 'Parallelizing GPT Inference',
+                description: 'Developed and optimized a high-performance CUDA implementation of GPT-2 inference, achieving a 14x token speedup (from 5 to 70 tokens/second) and 250x time speedup through advanced GPU programming techniques and algorithmic optimizations. Implemented Flash Attention 2 with softmax computation for memory-efficient attention (416x speedup), created a KV cache system for 57% token generation improvement, and developed Tensor Core matrix multiplication achieving 41.9% of cuBLAS performance through FP16 mixed-precision operations. Utilized advanced CUDA techniques including warp-level primitives with shuffle operations, parallel reductions with minimal thread divergence, shared memory bank conflict minimization, and kernel fusion strategies that reduced launch overhead by 2.45x. Performed extensive optimization using NVIDIA Nsight Compute and Nsight Systems profiling, analyzing memory throughput, cache hit rates, and warp stall patterns to increase GPU utilization from <10% to >90%. Applied memory hierarchy optimizations through constant memory utilization, dynamic shared memory allocation, global memory coalescing, and register allocation tuning. Built automated configuration sweeping framework with SLURM job scheduling to optimize block/grid dimensions across multiple kernel implementations. Technologies used: CUDA C/C++, Tensor Cores, NVIDIA Nsight tools, mixed-precision computing, parallel algorithm design, and GPU architecture optimization.',
+                technologies: ['CUDA', 'C++', 'SLURM', 'Tensor Cores', 'KV Cache', 'Python', 'NSight Systems', 'NSight Compute'],
+                source: ['https://substack.com/home/post/p-163954058', 'static/gpt.pdf'],
+                images: ['static/perf.png'],
+                status: 'COMPLETED'
+            },
         };
 
         // Modal functionality
@@ -577,7 +625,7 @@
                         links += `<a href="${project.source}" target="_blank" class="source-link">Source Code</a>`;
                     } else{
                         project.source.forEach((element, index) => {
-                            links += `<a href="${element}" target="_blank" class="source-link">Source Code ${index+1}</a>`;
+                            links += `<a href="${element}" target="_blank" class="source-link">Source ${index+1}</a>`;
                         });
                     }
 
