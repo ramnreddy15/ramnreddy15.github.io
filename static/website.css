@@ -693,8 +693,8 @@ a:active {
 /* Responsive design for featured projects */
 @media (max-width: 768px) {
   .blockContent {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 1em;
+    margin-right: 1em;
   }
   
   .img {
@@ -710,6 +710,9 @@ a:active {
 
   .terminal-box {
     padding: 1.5em;
+    margin-left: -1em;
+    margin-right: -1em;
+    width: calc(100% + 2em);
   }
 
   .info-img {
