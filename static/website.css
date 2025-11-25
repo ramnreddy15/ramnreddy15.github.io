@@ -105,16 +105,37 @@ a:active {
 
   .info-section {
     margin-bottom: 0;
-    min-height: 85vh;
     display: flex;
     flex-direction: column;
+  }
+
+  .terminal-box {
+    background: rgba(21, 97, 109, 0.15);
+    border: 2px solid rgba(231, 111, 81, 0.4);
+    border-radius: 8px;
+    padding: 2.5em;
+    margin-top: 1em;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(231, 111, 81, 0.1) inset;
+    position: relative;
+  }
+
+  .terminal-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #e76f51, #ff7d00, #e76f51);
+    border-radius: 8px 8px 0 0;
   }
 
   .info-content {
     display: flex;
     gap: 4em;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 0;
     flex: 0 0 auto;
   }
 
@@ -155,8 +176,8 @@ a:active {
 
   .info-description {
     margin-top: 2em;
-    padding-top: 3em;
-    border-top: 1px solid rgba(231, 111, 81, 0.15);
+    padding-top: 1.5em;
+    border-top: 1px solid rgba(231, 111, 81, 0.2);
     font-size: 1.3em;
     line-height: 1.8;
     color: #FFECD1;
@@ -522,35 +543,36 @@ a:active {
 /* Achievements section styling */
 .achievements-section {
   margin-bottom: 4em;
-  margin-top: 0;
+  margin-top: 1.5em;
 }
 
 .achievements-section h2 {
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 
 .achievements-list {
-  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 1.5em;
 }
 
 .achievement-item {
+  background: rgba(21, 97, 109, 0.1);
+  border: 2px solid rgba(231, 111, 81, 0.4);
+  border-radius: 8px;
+  padding: 1.5em;
   display: flex;
-  gap: 1.5em;
-  margin-bottom: 2.5em;
-  padding-left: 0.5em;
-  border-left: 3px solid rgba(231, 111, 81, 0.3);
-  transition: border-color 0.2s ease;
-}
-
-.achievement-item:hover {
-  border-left-color: #e76f51;
+  gap: 1em;
+  position: relative;
 }
 
 .achievement-prefix {
   color: #e76f51;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.2em;
   flex-shrink: 0;
+  margin-top: 0.1em;
 }
 
 .achievement-content {
@@ -565,14 +587,13 @@ a:active {
   font-size: 1.3em;
   font-weight: bold;
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .achievement-detail {
   color: #FFECD1;
   font-size: 1.1em;
   line-height: 1.6;
-  opacity: 0.85;
   margin-left: 0;
 }
 
@@ -687,6 +708,10 @@ a:active {
     gap: 2em;
   }
 
+  .terminal-box {
+    padding: 1.5em;
+  }
+
   .info-img {
     width: 150px;
     height: 150px;
@@ -710,15 +735,16 @@ a:active {
   }
 
   .achievement-prefix {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .achievements-list {
-    margin-left: 0.5em;
+    gap: 1em;
   }
 
   .achievement-item {
     gap: 0.8em;
+    padding: 1.2em;
   }
   
   h1 {
