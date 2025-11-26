@@ -97,6 +97,10 @@ a:active {
   }
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* 
 
   https://coolors.co/palette/001524-15616d-ffecd1-ff7d00-78290f
@@ -118,6 +122,7 @@ a:active {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
                 0 0 0 1px rgba(231, 111, 81, 0.1) inset;
     position: relative;
+    box-sizing: border-box; /* ADD THIS LINE */
   }
 
   .terminal-box::before {
@@ -690,110 +695,286 @@ a:active {
   color: #001524;
 }
 
-/* Responsive design for featured projects */
-@media (max-width: 768px) {
-  .blockContent {
-    margin-left: 1em;
-    margin-right: 1em;
+/* Add these styles to your existing website.css file */
+
+/* Projects page specific mobile fixes */
+@media (max-width: 1200px) {
+  /* Main container fixes */
+  body.blockContent {
+    margin: 3em 0 1.2em 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
   }
   
-  .img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto 1em auto;
-  }
-
-  .info-content {
-    flex-direction: column;
-    gap: 2em;
-  }
-
-  .terminal-box {
-    padding: 1.5em;
-    margin-left: -1em;
-    margin-right: -1em;
-    width: calc(100% + 2em);
-  }
-
-  .info-img {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-  }
-
-  .info-line {
-    font-size: 1.1em;
-  }
-
-  .info-description {
-    font-size: 1.1em;
-  }
-
-  .achievement-content strong {
-    font-size: 1.2em;
-  }
-
-  .achievement-detail {
-    font-size: 1em;
-  }
-
-  .achievement-prefix {
-    font-size: 1.1em;
-  }
-
-  .achievements-list {
-    gap: 1em;
-  }
-
-  .achievement-item {
-    gap: 0.8em;
-    padding: 1.2em;
+  .blockContent > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
   }
   
+  /* Headers */
   h1 {
     font-size: 2.2em;
+    padding: 0 1em;
+    margin-bottom: 1em;
   }
   
-  h2 {
+  h2.section-header {
     font-size: 1.8em;
+    padding: 0 1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
   }
-
+  
+  h2.command-header {
+    font-size: 1.8em;
+    padding: 0 1em;
+  }
+  
+  /* Projects Grid - Main fix */
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 1em;
+    padding: 0 1em;
+    margin-bottom: 2em;
   }
-
+  
+  /* Project Tiles */
+  .project-tile {
+    border-radius: 8px;
+    padding: 1.2em;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .tile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+  
+  .tile-header h3 {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    width: 100%;
+  }
+  
+  .status {
+    align-self: flex-start;
+  }
+  
+  .tile-content p {
+    font-size: 0.95em;
+  }
+  
+  .tech-stack {
+    font-size: 0.85em;
+    line-height: 1.4;
+  }
+  
+  .research-info {
+    margin-top: 0.5em;
+  }
+  
+  .research-info span {
+    font-size: 0.85em;
+    line-height: 1.4;
+  }
+  
+  /* Skills Grid */
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 1em;
+    padding: 0 1em;
+    margin-bottom: 2em;
   }
-
+  
+  .skill-tile {
+    border-radius: 8px;
+    padding: 1.2em;
+  }
+  
+  .skill-tile h3 {
+    font-size: 1.2em;
+  }
+  
+  .skill-tile p {
+    font-size: 0.95em;
+  }
+  
+  /* Modal adjustments */
   .modal-content {
     width: 95%;
     margin: 5% auto;
     padding: 1.5em;
     max-height: 90vh;
+    border-radius: 12px;
   }
-
-  .tile-header {
+  
+  .modal-content h2 {
+    font-size: 1.6em;
+  }
+  
+  .modal-content p {
+    font-size: 1em;
+  }
+  
+  .modal-links {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 0.8em;
   }
-
-  .tile-header h3 {
-    margin-right: 0;
-    margin-bottom: 0.5em;
+  
+  .modal-links a {
+    width: 100%;
+    text-align: center;
   }
-
+  
+  .modal-images img {
+    max-height: 250px;
+  }
+  
+  /* Info section (for index page) */
+  .info-section {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  
+  .info-content {
+    flex-direction: column;
+    gap: 2em;
+    padding: 0;
+  }
+  
+  .info-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .info-line {
+    font-size: 1.1em;
+  }
+  
+  .info-description {
+    font-size: 1.1em;
+    padding: 0;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+  }
+  
+  .terminal-box {
+    border-radius: 8px;
+    margin: 1em !important;
+    padding: 1.5em;
+    width: calc(100% - 2em);
+  }
+  
+  /* Achievements section */
+  .achievements-section {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  
+  .achievements-section h2 {
+    padding: 0 1em;
+  }
+  
+  .achievements-list {
+    gap: 1em;
+    padding: 0 1em;
+  }
+  
+  .achievement-item {
+    gap: 0.8em;
+    padding: 1.2em;
+    border-radius: 8px;
+  }
+  
+  .achievement-content strong {
+    font-size: 1.2em;
+  }
+  
+  .achievement-detail {
+    font-size: 1em;
+  }
+  
+  /* Featured projects section */
+  .featured-projects-section {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  
+  .featured-projects-section h2 {
+    padding: 0 1em;
+  }
+  
   .featured-projects-grid {
     grid-template-columns: 1fr;
     gap: 1em;
+    padding: 0 1em;
+  }
+  
+  .featured-project-tile {
+    border-radius: 8px;
+  }
+  
+  /* Contact section */
+  .contact-section {
+    margin: 0 1em 1.5em 1em;
+    border-radius: 8px;
+  }
+  
+  .contact-section h3 {
+    font-size: 2em;
+  }
+  
+  .contact-section p {
+    font-size: 1.5em;
+    margin-left: 1em;
   }
 }
 
-/* Custom styling for Ram's name */
-strong {
-  color: #e76f51;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(231, 111, 81, 0.3);
+/* Extra small devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2.section-header {
+    font-size: 1.5em;
+  }
+  
+  h2.command-header {
+    font-size: 1.5em;
+  }
+  
+  .project-tile {
+    padding: 1em;
+  }
+  
+  .tile-header h3 {
+    font-size: 1.2em;
+  }
+  
+  .status {
+    font-size: 0.7em;
+    padding: 0.25em 0.6em;
+  }
+  
+  .modal-content {
+    padding: 1em;
+  }
+  
+  .close {
+    font-size: 1.5em;
+  }
 }
+
