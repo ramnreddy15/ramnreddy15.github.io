@@ -695,7 +695,46 @@ a:active {
   color: #001524;
 }
 
-/* Add these styles to your existing website.css file */
+/* Tag Filter Section Styles */
+.tag-filter-section {
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+}
+
+.tag-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
+  margin-top: 1em;
+  padding: 0;
+}
+
+.tag-filter-btn {
+  padding: 0.6em 1.2em;
+  background: rgba(21, 97, 109, 0.2);
+  border: 2px solid #15616d;
+  border-radius: 25px;
+  color: #FFECD1;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.tag-filter-btn:hover {
+  background: rgba(21, 97, 109, 0.4);
+  border-color: #e76f51;
+  transform: translateY(-2px);
+}
+
+.tag-filter-btn.active {
+  background: linear-gradient(135deg, #e76f51, #ff7d00);
+  border-color: #e76f51;
+  color: #001524;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(231, 111, 81, 0.3);
+}
 
 /* Projects page specific mobile fixes */
 @media (max-width: 1200px) {
@@ -926,6 +965,28 @@ a:active {
     border-radius: 8px;
   }
   
+  /* Tag filter section */
+  .tag-filter-section {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  
+  .tag-filter-section h2 {
+    padding: 0 1em;
+  }
+  
+  .tag-filter-container {
+    padding: 0 1em;
+    gap: 0.7em;
+  }
+  
+  .tag-filter-btn {
+    font-size: 0.9em;
+    padding: 0.55em 1.1em;
+  }
+  
   /* Contact section */
   .contact-section {
     margin: 0 1em 1.5em 1em;
@@ -975,6 +1036,16 @@ a:active {
   
   .close {
     font-size: 1.5em;
+  }
+  
+  .tag-filter-container {
+    gap: 0.6em;
+    padding: 0 1em;
+  }
+  
+  .tag-filter-btn {
+    padding: 0.5em 1em;
+    font-size: 0.85em;
   }
 }
 

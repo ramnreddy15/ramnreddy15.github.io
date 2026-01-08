@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/website.css">
     <title>Ram Reddy - Work & Projects</title>
     <link rel="icon" href="static/r.png">
@@ -11,19 +12,19 @@
     <div>
         <h1><span class="command"> Ram Reddy -projects</span></h1>
 
-        <!-- <pre style="color: #e76f51;">> UNDER MAINTENANCE
-            O
-            /~~~|#|]|=\|---\__
-          |-=_____________  |\\ ,             O       O
-         I|_/,-.-.-.-.-,-.\_|='(             T/\     /\=,---.
-            ( o )( o )( o )     \            U /\   /\   `O'    cww
-             `-'-'-'-'-`-'
-        </pre> -->
+        <!-- Tag Filter Section -->
+        <div class="tag-filter-section">
+            <h2 class="section-header">Filter by Technology</h2>
+            <div class="tag-filter-container">
+                <button class="tag-filter-btn active" data-tag="all">All Projects</button>
+                <!-- Tags will be dynamically generated from Skills & Technologies -->
+            </div>
+        </div>
 
-        <h2 class="section-header">Personal Projects</h2>
-        
-        <div class="projects-grid">
-            <div class="project-tile" onclick="showProjectDetails('home-storage')">
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Personal Projects -->
+            <div class="project-tile" onclick="showProjectDetails('home-storage')" data-tags="Raspberry Pi,Docker,Embedded Systems">
                 <div class="tile-header">
                     <h3>Home Storage Server</h3>
                     <span class="status maintenance">UNDER MAINTENANCE</span>
@@ -37,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('healthy-chimp')">
+            <div class="project-tile" onclick="showProjectDetails('healthy-chimp')" data-tags="Python,OpenCV,Arduino,Ultralytics,Computer Vision,Machine Learning,Embedded Systems">
                 <div class="tile-header">
                     <h3>HealthyChimp</h3>
                     <span class="status completed">COMPLETED</span>
@@ -51,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('crisisvision')">
+            <div class="project-tile" onclick="showProjectDetails('crisisvision')" data-tags="Python,OpenCV,Ultralytics,Raspberry Pi,Computer Vision,Robotics,Embedded Systems">
                 <div class="tile-header">
                     <h3>CrisisVision</h3>
                     <span class="status completed">COMPLETED</span>
@@ -65,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('lifecycle')">
+            <div class="project-tile" onclick="showProjectDetails('lifecycle')" data-tags="Java,JavaScript,Android,Web Technologies">
                 <div class="tile-header">
                     <h3>LifeCycle</h3>
                     <span class="status completed">COMPLETED</span>
@@ -79,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('cloud-computing')">
+            <div class="project-tile" onclick="showProjectDetails('cloud-computing')" data-tags="Web Technologies">
                 <div class="tile-header">
                     <h3>Cloud Computing Website</h3>
                     <span class="status completed">COMPLETED</span>
@@ -93,7 +94,7 @@
                 </div>
             </div>
             
-            <div class="project-tile" onclick="showProjectDetails('django-ecommerce')">
+            <div class="project-tile" onclick="showProjectDetails('django-ecommerce')" data-tags="Django,Python,Web Technologies">
                 <div class="tile-header">
                     <h3>Django Ecommerce Platform</h3>
                     <span class="status completed">COMPLETED</span>
@@ -107,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ml-projects')">
+            <div class="project-tile" onclick="showProjectDetails('ml-projects')" data-tags="Python,PyTorch,TensorFlow,Machine Learning">
                 <div class="tile-header">
                     <h3>Various ML Projects</h3>
                     <span class="status completed">COMPLETED</span>
@@ -121,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('asteroids')">
+            <div class="project-tile" onclick="showProjectDetails('asteroids')" data-tags="Java">
                 <div class="tile-header">
                     <h3>Asteroids</h3>
                     <span class="status completed">COMPLETED</span>
@@ -135,7 +136,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('uride')">
+            <div class="project-tile" onclick="showProjectDetails('uride')" data-tags="Python,OpenCV,TensorFlow,Computer Vision,Machine Learning">
                 <div class="tile-header">
                     <h3>URide</h3>
                     <span class="status completed">COMPLETED</span>
@@ -149,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('foodsaver')">
+            <div class="project-tile" onclick="showProjectDetails('foodsaver')" data-tags="Django,Java,Python,TensorFlow,Machine Learning,Web Technologies">
                 <div class="tile-header">
                     <h3>FoodSaver</h3>
                     <span class="status completed">COMPLETED</span>
@@ -163,7 +164,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('covid19-app')">
+            <div class="project-tile" onclick="showProjectDetails('covid19-app')" data-tags="Python,JavaScript,Web Technologies">
                 <div class="tile-header">
                     <h3>COVID-19 App</h3>
                     <span class="status completed">COMPLETED</span>
@@ -177,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('cashoutcookie')">
+            <div class="project-tile" onclick="showProjectDetails('cashoutcookie')" data-tags="Django,Python,Web Technologies">
                 <div class="tile-header">
                     <h3>CashOutCookie</h3>
                     <span class="status completed">COMPLETED</span>
@@ -190,25 +191,19 @@
                     <span class="click-hint">Click to view details</span>
                 </div>
             </div>
-        </div>
 
-        <h2 class="section-header">Course Projects</h2>
-        
-        <div class="projects-grid">
-            <div class="project-tile" onclick="showProjectDetails('ece428')">
+            <!-- Course Projects -->
+            <div class="project-tile" onclick="showProjectDetails('ece428')" data-tags="Systems Programming">
                 <div class="tile-header">
-                    <h3>ECE 428: Distributed Sytems</h3>
+                    <h3>ECE 428: Distributed Systems</h3>
                     <span class="status active">IN PROGRESS</span>
                 </div>
                 <div class="tile-content">
                     <p>Protocols, specification techniques, global states and their determination, reliable broadcast, transactions and commitment, security, and real-time systems.</p>
                 </div>
-                <!-- <div class="tile-footer">
-                    <span class="click-hint">Click to view details</span>
-                </div> -->
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ece470')">
+            <div class="project-tile" onclick="showProjectDetails('ece470')" data-tags="Robotics">
                 <div class="tile-header">
                     <h3>ECE 470: Introduction to Robotics</h3>
                     <span class="status active">IN PROGRESS</span>
@@ -216,12 +211,9 @@
                 <div class="tile-content">
                     <p>Fundamentals of robotics including rigid motions; homogeneous transformations; forward and inverse kinematics; velocity kinematics; motion planning; trajectory generation; sensing, vision; control.</p>
                 </div>
-                <!-- <div class="tile-footer">
-                    <span class="click-hint">Click to view details</span>
-                </div> -->
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ece385')">
+            <div class="project-tile" onclick="showProjectDetails('ece385')" data-tags="Embedded Systems,Systems Programming">
                 <div class="tile-header">
                     <h3>ECE 385: Digital Systems Laboratory</h3>
                     <span class="status active">IN PROGRESS</span>
@@ -229,12 +221,9 @@
                 <div class="tile-content">
                     <p>Design, build, and test digital systems using transistor-transistor logic (TTL), SystemVerilog, and field-programmable gate arrays (FPGAs).</p>
                 </div>
-                <!-- <div class="tile-footer">
-                    <span class="click-hint">Click to view details</span>
-                </div> -->
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ece397')">
+            <div class="project-tile" onclick="showProjectDetails('ece397')" data-tags="Robotics">
                 <div class="tile-header">
                     <h3>ECE 397: Humanoid Robotics Project</h3>
                     <span class="status active">IN PROGRESS</span>
@@ -242,12 +231,9 @@
                 <div class="tile-content">
                     <p>In progress...</p>
                 </div>
-                <!-- <div class="tile-footer">
-                    <span class="click-hint">Click to view details</span>
-                </div> -->
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ece391')">
+            <div class="project-tile" onclick="showProjectDetails('ece391')" data-tags="C,Systems Programming">
                 <div class="tile-header">
                     <h3>ECE 391: Computer Systems Engineering</h3>
                     <span class="status maintenance">UNDER MAINTENANCE</span>
@@ -260,7 +246,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ece408')">
+            <div class="project-tile" onclick="showProjectDetails('ece408')" data-tags="CUDA,C++,SLURM,Parallel Computing">
                 <div class="tile-header">
                     <h3>ECE 408: Applied Parallel Computing</h3>
                     <span class="status completed">COMPLETED</span>
@@ -273,7 +259,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ece313')">
+            <div class="project-tile" onclick="showProjectDetails('ece313')" data-tags="Python,Machine Learning">
                 <div class="tile-header">
                     <h3>ECE 313: Probability with Engineering Applications</h3>
                     <span class="status completed">COMPLETED</span>
@@ -286,7 +272,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ece210')">
+            <div class="project-tile" onclick="showProjectDetails('ece210')" data-tags="Embedded Systems">
                 <div class="tile-header">
                     <h3>ECE 210: Analog Signal Processing</h3>
                     <span class="status completed">COMPLETED</span>
@@ -299,7 +285,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('computer-vision')">
+            <div class="project-tile" onclick="showProjectDetails('computer-vision')" data-tags="C++,OpenCV,Computer Vision">
                 <div class="tile-header">
                     <h3>Computer Vision Course</h3>
                     <span class="status completed">COMPLETED</span>
@@ -312,7 +298,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('ai-class')">
+            <div class="project-tile" onclick="showProjectDetails('ai-class')" data-tags="Python,Machine Learning">
                 <div class="tile-header">
                     <h3>Artificial Intelligence Course</h3>
                     <span class="status completed">COMPLETED</span>
@@ -324,12 +310,9 @@
                     <span class="click-hint">Click to view details</span>
                 </div>
             </div>
-        </div>
 
-        <h2 class="section-header">Research Projects</h2>
-        
-        <div class="projects-grid">
-            <div class="project-tile" onclick="showProjectDetails('gpt-inference')">
+            <!-- Research Projects -->
+            <div class="project-tile" onclick="showProjectDetails('gpt-inference')" data-tags="CUDA,C++,SLURM,Python,Parallel Computing">
                 <div class="tile-header">
                     <h3>Parallelizing GPT Inference</h3>
                     <span class="status completed">COMPLETED</span>
@@ -345,7 +328,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('uiuc-robotics')">
+            <div class="project-tile" onclick="showProjectDetails('uiuc-robotics')" data-tags="ROS,C++,Robotics">
                 <div class="tile-header">
                     <h3>Vision Free Robotic Grasping</h3>
                     <span class="status completed">COMPLETED</span>
@@ -364,7 +347,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('dartmouth-pathology')">
+            <div class="project-tile" onclick="showProjectDetails('dartmouth-pathology')" data-tags="Python,Machine Learning">
                 <div class="tile-header">
                     <h3>Dartmouth Hitchcock Medical Center Pathology Research</h3>
                     <span class="status completed">COMPLETED</span>
@@ -380,7 +363,7 @@
                 </div>
             </div>
 
-            <div class="project-tile" onclick="showProjectDetails('tjhsst-robotics')">
+            <div class="project-tile" onclick="showProjectDetails('tjhsst-robotics')" data-tags="Python,Arduino,Robotics,Embedded Systems">
                 <div class="tile-header">
                     <h3>Building Baymax</h3>
                     <span class="status completed">COMPLETED</span>
@@ -397,27 +380,6 @@
             </div>
         </div>
 
-        <h2 class="section-header">Skills & Technologies</h2>
-        
-        <div class="skills-grid">
-            <div class="skill-tile">
-                <h3>Programming Languages</h3>
-                <p>C++, Python, Java, JavaScript, C, RISC-V, GO, Rust</p>
-            </div>
-            <div class="skill-tile">
-                <h3>Web Technologies</h3>
-                <p>HTML, CSS, React, Node.js, Express.js, Django, Handlebars</p>
-            </div>
-            <div class="skill-tile">
-                <h3>Tools & Platforms</h3>
-                <p>Git, Linux, Docker, CUDA, ROS, MakeFile, Arduino, Raspberry Pi, SLURM</p>
-            </div>
-            <div class="skill-tile">
-                <h3>Areas of Expertise</h3>
-                <p>Robotics, Computer Vision, Machine Learning, Algorithms, Systems Programming, Parallel Computing, Embedded Systems</p>
-            </div>
-        </div>
-
         <!-- Project Details Modal -->
         <div id="projectModal" class="modal">
             <div class="modal-content">
@@ -428,7 +390,6 @@
 
         <br>
         <h2 class="command-header"><a href="index.html"> -view info</a><span class="blink">|</span></h2>
-        <!-- <h2 style="color: #e76f51;">><a href="static/Ram_Reddy_Resume.pdf" target="_blank"> -view resume</a><span class="blink">|</span></h2> -->
         <h2 class="command-header"><a href="contact.html"> -view contact</a><span class="blink">|</span></h2>
     </div>
 
@@ -439,8 +400,6 @@
                 title: 'Home Storage Server',
                 description: 'Designed and implemented a comprehensive personal storage solution using Raspberry Pi 4 as the foundation, running OpenMediaVault for NAS management and drive control with a web-based interface. Deployed Docker containers hosting Tailscale for secure global VPN access and PhotoPrism as an open-source Google Photos alternative with AI-powered photo organization. The system connects via Ethernet to a home router with external storage via USB 3.0, enabling encrypted remote access from any device worldwide without port forwarding or cloud dependencies.',
                 technologies: ['OpenMediaVault', 'Raspberry Pi', 'Docker', 'Tailscale', 'PhotoPrism'],
-                // images: ["static/me.jpg", "static/me.jpg"],
-                // demo: '#',
                 status: 'UNDER MAINTENANCE'
             },
             'healthy-chimp': {
@@ -601,8 +560,100 @@
                 source: ['https://substack.com/home/post/p-163954058', 'static/gpt.pdf'],
                 images: ['static/perf.png'],
                 status: 'COMPLETED'
+            },
+            'ece428': {
+                title: 'ECE 428: Distributed Systems',
+                description: 'Protocols, specification techniques, global states and their determination, reliable broadcast, transactions and commitment, security, and real-time systems.',
+                technologies: ['Distributed Systems', 'Protocols', 'Security'],
+                status: 'IN PROGRESS'
+            },
+            'ece470': {
+                title: 'ECE 470: Introduction to Robotics',
+                description: 'Fundamentals of robotics including rigid motions; homogeneous transformations; forward and inverse kinematics; velocity kinematics; motion planning; trajectory generation; sensing, vision; control.',
+                technologies: ['Robotics', 'Kinematics', 'Control Systems'],
+                status: 'IN PROGRESS'
+            },
+            'ece385': {
+                title: 'ECE 385: Digital Systems Laboratory',
+                description: 'Design, build, and test digital systems using transistor-transistor logic (TTL), SystemVerilog, and field-programmable gate arrays (FPGAs).',
+                technologies: ['SystemVerilog', 'FPGA', 'Digital Systems'],
+                status: 'IN PROGRESS'
+            },
+            'ece397': {
+                title: 'ECE 397: Humanoid Robotics Project',
+                description: 'In progress...',
+                technologies: ['Robotics'],
+                status: 'IN PROGRESS'
             }
         };
+
+        // Extract unique tags from all projects
+        function extractUniqueTags() {
+            const tagsSet = new Set();
+            const projectTiles = document.querySelectorAll('.project-tile[data-tags]');
+            
+            projectTiles.forEach(tile => {
+                const tags = tile.getAttribute('data-tags').split(',');
+                tags.forEach(tag => tagsSet.add(tag.trim()));
+            });
+            
+            return Array.from(tagsSet).sort();
+        }
+
+        // Generate tag filter buttons
+        function generateTagFilters() {
+            const container = document.querySelector('.tag-filter-container');
+            const uniqueTags = extractUniqueTags();
+            
+            uniqueTags.forEach(tag => {
+                const button = document.createElement('button');
+                button.className = 'tag-filter-btn';
+                button.textContent = tag;
+                button.setAttribute('data-tag', tag);
+                button.addEventListener('click', () => filterProjects(tag));
+                container.appendChild(button);
+            });
+        }
+
+        // Filter projects by tag
+        function filterProjects(selectedTag) {
+            const projectTiles = document.querySelectorAll('.project-tile');
+            const filterButtons = document.querySelectorAll('.tag-filter-btn');
+            
+            // Update active button
+            filterButtons.forEach(btn => {
+                if (btn.getAttribute('data-tag') === selectedTag) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            // Filter projects
+            projectTiles.forEach(tile => {
+                if (selectedTag === 'all') {
+                    tile.style.display = '';
+                } else {
+                    const tags = tile.getAttribute('data-tags').split(',').map(t => t.trim());
+                    if (tags.includes(selectedTag)) {
+                        tile.style.display = '';
+                    } else {
+                        tile.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Initialize tag filters on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            generateTagFilters();
+            
+            // Set up "All Projects" button
+            const allBtn = document.querySelector('.tag-filter-btn[data-tag="all"]');
+            if (allBtn) {
+                allBtn.addEventListener('click', () => filterProjects('all'));
+            }
+        });
 
         // Modal functionality
         const modal = document.getElementById('projectModal');
@@ -622,13 +673,12 @@
 
                 if (project.source && project.source.length > 0) {
                     if(project.source.length == 1) {
-                        links += `<a href="${project.source}" target="_blank" class="source-link">Source Code</a>`;
+                        links += `<a href="${project.source[0]}" target="_blank" class="source-link">Source Code</a>`;
                     } else{
                         project.source.forEach((element, index) => {
                             links += `<a href="${element}" target="_blank" class="source-link">Source ${index+1}</a>`;
                         });
                     }
-
                 }
 
                 if (project.competition) {
@@ -653,7 +703,6 @@
                     <div class="modal-links">
                         ${links}                    
                     </div>
-
                 `;
                 modal.style.display = 'block';
             }
