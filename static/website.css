@@ -695,6 +695,41 @@ a:active {
   color: #001524;
 }
 
+/* Social Icons Styles */
+.social-icons {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  padding: 1em 0;
+}
+
+.social-icon {
+  color: #FFECD1;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  border-radius: 8px;
+  background: rgba(21, 97, 109, 0.1);
+  border: 2px solid rgba(231, 111, 81, 0.3);
+}
+
+.social-icon:hover {
+  color: #e76f51;
+  background: rgba(21, 97, 109, 0.2);
+  border-color: #e76f51;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(231, 111, 81, 0.3);
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
 /* Tag Filter Section Styles */
 .tag-filter-section {
   margin-bottom: 2em;
@@ -1000,6 +1035,22 @@ a:active {
   .contact-section p {
     font-size: 1.5em;
     margin-left: 1em;
+  }
+  
+  /* Social icons mobile */
+  .social-icons {
+    gap: 1em;
+    margin: 1.5em 0;
+    padding: 0.8em 0;
+  }
+  
+  .social-icon {
+    padding: 0.4em;
+  }
+  
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
   }
 }
 
