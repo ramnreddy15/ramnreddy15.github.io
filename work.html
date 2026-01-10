@@ -210,10 +210,14 @@
             <div class="project-tile" onclick="showProjectDetails('ece470')" data-tags="Robotics">
                 <div class="tile-header">
                     <h3>ECE 470: Introduction to Robotics</h3>
-                    <span class="status active">IN PROGRESS</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Fundamentals of robotics including rigid motions; homogeneous transformations; forward and inverse kinematics; velocity kinematics; motion planning; trajectory generation; sensing, vision; control.</p>
+                    <p>Class about the fundamentals of modern robotics and various math concepts.</p>
+                    <div class="tech-stack">Python, Robotics, Kinematics, Control Systems, Motion Planning</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
                 </div>
             </div>
 
@@ -229,11 +233,22 @@
 
             <div class="project-tile" onclick="showProjectDetails('ece397')" data-tags="Robotics">
                 <div class="tile-header">
-                    <h3>ECE 397: Humanoid Robotics Project</h3>
-                    <span class="status active">IN PROGRESS</span>
+                    <h3>ECE 398: Ringbot Project</h3>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>In progress...</p>
+                    <p>Built a self balancing ringbot from scratch or atleast attempted to.</p>
+                    <div class="research-info">
+                        <span>Advisor: Professor Joohyung Kim</span>
+                    </div>
+                    <div class="research-info">
+                        <span>Mentors: Kenta Hirashima, Noboru Myers</span>
+                    </div>
+                    <br>
+                    <div class="tech-stack">Raspberry Pi, Robotics, Prototyping</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
                 </div>
             </div>
 
@@ -601,8 +616,11 @@
             'ece470': {
                 title: 'ECE 470: Introduction to Robotics',
                 description: 'Fundamentals of robotics including rigid motions; homogeneous transformations; forward and inverse kinematics; velocity kinematics; motion planning; trajectory generation; sensing, vision; control.',
-                technologies: ['Robotics', 'Kinematics', 'Control Systems'],
-                status: 'IN PROGRESS'
+                technologies: ['Python','Robotics', 'Kinematics', 'Control Systems', 'Motion Planning'],
+                source: ['https://github.com/ramnreddy15/ece470', 'static/ECE 470 Report for Lab 4.pdf', 'static/ECE 470 Report for Final Project.pdf'],
+                images: ['static/ece470.png'],
+                demo:'https://www.youtube.com/watch?v=jMNL6h0yaxI',
+                status: 'COMPLETED'
             },
             'ece385': {
                 title: 'ECE 385: Digital Systems Laboratory',
@@ -611,10 +629,12 @@
                 status: 'IN PROGRESS'
             },
             'ece397': {
-                title: 'ECE 397: Humanoid Robotics Project',
-                description: 'In progress...',
-                technologies: ['Robotics'],
-                status: 'IN PROGRESS'
+                title: 'ECE 398: Ringbot Project',
+                description: 'I recreated and extended KimLabs Ringbot, focusing on improving its turning behavior and robustness to falls. The project involved full system replication, from bill of materials and mechanical fabrication to electronics integration and Raspberry Pi based control followed by extensive testing and debugging. I modified the existing control algorithms to achieve a smaller turning radius and more reliable fall detection and recovery.',
+                technologies: ['Raspberry Pi', 'Robotics', 'Prototyping'],
+                source: ['static/ECE 470 Report for Final Project.pdf'],
+                demo:'https://youtu.be/USwT0S0I8Vc',
+                status: 'COMPLETED'
             }
         };
 
@@ -704,7 +724,7 @@
 
                 if (project.source && project.source.length > 0) {
                     if(project.source.length == 1) {
-                        links += `<a href="${project.source[0]}" target="_blank" class="source-link">Source Code</a>`;
+                        links += `<a href="${project.source[0]}" target="_blank" class="source-link">Source</a>`;
                     } else{
                         project.source.forEach((element, index) => {
                             links += `<a href="${element}" target="_blank" class="source-link">Source ${index+1}</a>`;
