@@ -224,10 +224,14 @@
             <div class="project-tile" onclick="showProjectDetails('ece385')" data-tags="Embedded Systems,Systems Programming">
                 <div class="tile-header">
                     <h3>ECE 385: Digital Systems Laboratory</h3>
-                    <span class="status active">IN PROGRESS</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
-                    <p>Design, build, and test digital systems using transistor-transistor logic (TTL), SystemVerilog, and field-programmable gate arrays (FPGAs).</p>
+                    <p>Design a build various systems using FPGAs like graphics, SPI, and games.</p>
+                    <div class="tech-stack">System Verilog, Xilinx FPGA, Vivado, Computer Architecture, Digital Systems, SPI</div>
+                </div>
+                <div class="tile-footer">
+                    <span class="click-hint">Click to view details</span>
                 </div>
             </div>
 
@@ -255,11 +259,12 @@
             <div class="project-tile" onclick="showProjectDetails('ece391')" data-tags="C,Systems Programming">
                 <div class="tile-header">
                     <h3>ECE 391: Computer Systems Engineering</h3>
-                    <span class="status maintenance">UNDER MAINTENANCE</span>
+                    <span class="status completed">COMPLETED</span>
                 </div>
                 <div class="tile-content">
                     <p>Built an operating system that can run DOOM and now assisting with course material</p>
                 </div>
+                <div class="tech-stack">C, RISC-V, Python</div>
                 <div class="tile-footer">
                     <span class="click-hint">Click to view details</span>
                 </div>
@@ -637,9 +642,12 @@
             },
             'ece385': {
                 title: 'ECE 385: Digital Systems Laboratory',
-                description: 'Design, build, and test digital systems using transistor-transistor logic (TTL), SystemVerilog, and field-programmable gate arrays (FPGAs).',
-                technologies: ['SystemVerilog', 'FPGA', 'Digital Systems'],
-                status: 'IN PROGRESS'
+                description: 'I designed and built multiple hardware systems on Xilinx FPGAs, including graphics pipelines, SPI based communication modules, and interactive game logic. This work involved writing and verifying SystemVerilog, integrating peripherals, and using Vivado for synthesis, implementation, and debugging. Through these projects, I applied core computer architecture concepts to create efficient, reliable digital systems and gained hands on experience with low level hardware design and FPGA toolchains. For the final project we made Astro Party which had its own graphics pipeline and game logic.',
+                technologies: ['System Verilog', 'Xilinx FPGA', 'Vivado', 'Computer Architecture', 'Digital Systems', 'SPI'],
+                source: ['https://github.com/ramnreddy15/ECE385', 'static/ECE 385 Final Project Report.pdf'],
+                images: ['static/astro_party.png'],
+                demo:'https://youtu.be/lIaVCjWs3mg',
+                status: 'COMPLETED'
             },
             'ece397': {
                 title: 'ECE 398: Ringbot Project',
@@ -647,6 +655,13 @@
                 technologies: ['Raspberry Pi', 'Robotics', 'Prototyping'],
                 source: ['static/ECE398_Final_Report.pdf'],
                 demo:'https://youtu.be/USwT0S0I8Vc',
+                status: 'COMPLETED'
+            },
+            'ece391': {
+                title: 'ECE 391: Computer Systems Engineering',
+                description: 'I collaborated in a team of three to design and develop a Unix like operating system from the ground up using RISC V and C, producing over 30 thousand lines of kernel and testing code capable of running Doom. I implemented core operating system components including a custom multi level file system, caching layers, memory management with paging, device drivers, process and thread management, and scheduling. I also led the development of a custom shell featuring command history, autocomplete, and an integrated text editor. The project was recognized as one of the top operating systems of the semester.',
+                technologies: ['C', 'RISC-V', 'Python'],
+                demo:'https://youtu.be/kHAMpa5D4jw',
                 status: 'COMPLETED'
             }
         };
